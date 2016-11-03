@@ -13,4 +13,6 @@ RUN apk update && \
     apk upgrade -U && \
     apk add bash zsh vim git grep sed curl wget tar gzip pcre perl patch patchutils diffutils postfix openssh busybox-suid make g++
 
+ADD ./bashrc /root/.bashrc
+
 CMD ["/bin/bash"]
